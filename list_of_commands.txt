@@ -1,0 +1,76 @@
+  265  mkdir task3
+  266  cd task3/
+  267  git init -b main
+  268  vim new_file.txt
+  269  ls
+  270  git status
+  271  git add new_file.txt
+  272  git status
+  273  git commit -m "create new file"
+  274  git remote add origin https://github.com/UlyssesOTI/task3.git
+  275  git remote -v
+  276  git fetch
+  277  git fetch
+  278  git branch -a
+  279  git rebase origin/main
+  280  git log
+  281  git push --set-upstream origin main
+  282  git log
+  283  git checkout -b develop
+  284  git checkout -b feature
+  285  git log
+  286  vim new_file.txt
+  287  git status
+  288  git add new_file.txt
+  289  git commit -m "added first line to the file"
+  290  git status
+  291  git log
+  292  git push --set-upstream origin feature
+  293  git log
+  294  git checkout develop
+  295  git push --set-upstream origin develop
+  296  cd ..
+  297  git clone https://github.com/UlyssesOTI/task3.git ./task3_copy
+  298  ls
+  299  cd task3_copy/
+  300  ls
+  301  git branch -a
+  302  git checkout -b feature2 remotes/origin/develop
+  303  git branch -a
+  304  git push --set-upstream origin feature2
+  305  git log
+  306  git fetch
+  307  git log
+  308  ls
+  309  cat new_file.txt
+  310  vim new_file.txt
+  311  cat new_file.txt
+  312  git log
+  313  git status
+  314  git add new_file.txt
+  315  git commit -m "added another first line to a file"
+  316  git push
+  317  git checkout develop
+  318  git log
+  319  git checkout feature2
+  320  git log
+  321  git checkout develop
+  322  git fetch origin feature
+  323  git branch -a
+  324  git merge origin/feature
+  325  git log
+  326  git checkout feature2
+  327  git rebase deve
+  328  git rebase develop
+  329  vim new_file.txt
+  330  git rebase --continue
+  331  git status
+  332  git add new_file.txt
+  333  git rebase --continue
+  334  git log
+  335  git checkout develop
+  336  git log
+  337  git merge feature2
+  338  git log
+  339  git reflog
+  340  history > list_of_commands.txt
